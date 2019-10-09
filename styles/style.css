@@ -11,6 +11,64 @@ body{
     text-align: center;
 }
 
+nav{
+    background-color: rgb(236, 188, 78);
+    height: 9vh;
+    min-height: 70px;
+    border-bottom: 1vh solid rgb(167, 117, 1);
+}
+
+nav #main-logo{
+    position: relative;
+    bottom: 1vh;
+    height: 7vh;
+    min-height: 55px;
+    width: auto;
+}
+
+nav .beer-menu-icon{
+    height: 6vh;
+    min-height: 45px;
+    width: auto;
+}
+
+nav button{
+    position: relative;
+    bottom: 1vh;
+}
+
+nav a{
+    color: black;
+}
+
+nav a:hover{
+    color: black;
+}
+
+nav li, nav ul{
+    position: relative;
+    bottom: 0.5vh;
+    width: auto;
+}
+
+nav ul a{
+    width: 40vw;
+    float: right;
+    color: black;
+    background-color: rgb(236, 188, 78);
+    border-top: 1px solid rgb(167, 117, 1);
+}
+
+nav ul a:hover{
+    color: white;
+    background-color: rgb(163, 131, 55);
+}
+
+
+nav i{
+    color: black;
+}
+
 header{
     height: 73vw;
     background: url("../img/header-bg.JPG") no-repeat center;
@@ -118,7 +176,7 @@ footer iframe{
     max-width: 500px;
 }
 
-@media (min-width: 750px){
+@media (min-width: 768px){
 
     body{
         font-size: 16px;
@@ -157,7 +215,40 @@ footer iframe{
     }
 }
 
-@media (min-width: 1000px){
+@media (min-width: 992px){
+
+    nav{
+        height: 15vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav #main-logo{
+        position: static;
+        height: 12vh;
+    }
+    
+    nav a{
+        font-size: 3vh;
+    }
+    
+    nav a:hover{
+        color: black;
+    }
+    
+    nav li, nav ul{
+        position: static;
+        width: auto;
+        padding: 0 1vw;
+    }
+    
+    nav ul a{
+        width: auto;
+        
+        float: none;
+        border: none;
+    }
 
     header{
         height: 85vh;
