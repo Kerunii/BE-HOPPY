@@ -9,7 +9,9 @@ let checkUser = () =>{
     let usersDB = JSON.parse(localStorage.getItem('users'))
     counter = 0;
 
-    usersDB.forEach(user => {
+    if (!usersDB){
+        return false
+    } else  usersDB.forEach(user => {
 
         if (userName.value == user.name && password.value == user.password){
         counter ++;
