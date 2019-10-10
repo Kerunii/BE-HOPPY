@@ -458,3 +458,45 @@ footer iframe{
     list-style: none;
     text-align: left;
 }
+
+/* About us */
+
+#our-vision{
+    padding: 3vh 3vw;
+}
+
+#our-vision h2{
+    margin: 6vh auto;
+    font-size: 3em;
+}
+
+#our-vision article{
+    padding:0;
+    margin:0;
+    background-color: transparent;
+    box-shadow: none;
+    width: 350px;
+    height: 100px;
+    overflow: hidden;
+}
+
+#our-vision article h3{
+    background-color: red;
+    margin:0;
+    padding: 30px;
+}
+
+#our-vision .moved{
+    transform: translate(-300px)
+}
+
+
+
+#our-vision article p{
+    margin:0;
+    padding-left: 50px;
+    position:relative;
+    bottom: 100px;
+    z-index: -1;
+}
+
