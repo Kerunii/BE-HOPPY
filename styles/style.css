@@ -64,11 +64,6 @@ nav ul a:hover{
     background-color: rgb(163, 131, 55);
 }
 
-
-nav i{
-    color: black;
-}
-
 header{
     height: 73vw;
     background: url("../img/header-bg.JPG") no-repeat center;
@@ -231,6 +226,7 @@ footer iframe{
     
     nav a{
         font-size: 3vh;
+        border-radius: 10px;
     }
     
     nav a:hover{
@@ -413,19 +409,26 @@ footer iframe{
 
 /* CATALOGUE */
 
+#beer-catalogue-section{
+    background-color: rgb(248, 233, 196)
+    
+}
+
 #beer-catalogue-title{
     text-align: left;
-    margin: 3vh;
+    padding: 3vh;
     font-size: 3rem;
 }
 
 #article-container{
+
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .beer-container{
+    background: white;
     width: 370px;
     margin: 30px 30px;
     padding: 10px 10px;

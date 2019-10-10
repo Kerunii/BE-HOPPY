@@ -13,7 +13,7 @@ let createBeerArticle = beer =>{
     <div class="beer-data">
         <img src="${beer.labels ? beer.labels.medium : "img/not-available.JPG"}" alt"image-beer" class="beer-image">
         <ul class="beer-ul">
-            <li class="beer-type"><b>Style:</b> ${beer.style ? beer.style.category.name :  "Beer"}</li>
+            <li class="beer-type"><b>Style:</b> ${beer.style ? beer.style.category.name :  "Our own style"}</li>
             <li class="beer-spec"> <b>Specifications: </b>
                 <ul>
                     <li class="beer-abv">ABV: ${beer.abv}</li>
