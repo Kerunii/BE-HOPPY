@@ -1,12 +1,9 @@
 const titlesArray = [...document.querySelectorAll('.title')]
 
 for (i=0; i<titlesArray.length; i++){
-    title = titlesArray[i]
+    titlesArray[i].addEventListener('click',toggle);
 }
 
-
-title.addEventListener('click',toggle);
-
-function toggle (){
-  title.classList.toggle('moved');
+function toggle (event){
+  event.currentTarget.classList.toggle('moved');
 }

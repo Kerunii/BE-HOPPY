@@ -21,9 +21,10 @@ let createBeerArticle = beer =>{
                 </ul>
             </li>
         </ul>
-    </div> `
+    </div>
+    <button type="button" class="btn btn-outline-warning">Check this beer</button>
+    <i class="fas fa-star"></i>`
     articleContainer.appendChild(article)
-    console.log(article)
 }
 
 let beerApiRandom = async () => {
@@ -36,12 +37,26 @@ let beerApiRandom = async () => {
 
         randomNumber = Math.floor(Math.random()*beerArray.length)
         let beer = beerArray[randomNumber]
-        console.log(beer)
         createBeerArticle(beer)
         beerArray.splice(randomNumber, 1)
     }
-    }
+    
+}
 
-    //let i = Math.floor(Math.random()*45)
+//let i = Math.floor(Math.random()*45)
 
 beerApiRandom()
+
+//To select a beer as a favorite:
+
+//el problema es que las estrellas de favorito nacen de una función asincrona. 
+let starArray = [...document.querySelectorAll('.fa-star')]
+
+for (i=0; i<starArray.length; i++){
+    starArray[i].addEventListener('click',toggle2);
+    console.log (starArray[i])
+}
+
+function toggle2 (event){
+  event.currentTarget.classList.toggle('favorite');
+}
