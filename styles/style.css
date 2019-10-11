@@ -471,18 +471,20 @@ footer iframe{
 
 .beer-container .fa-star{
     position: relative;
-    top: 5px;
-    font-size:20px;
+    top: 2px;
+    font-size: 18px;
     margin-left: 25px;
-    color: grey;
-    border: 1px solid grey;
-    padding: 10px;
+    color: white;
+    background: grey;
+    border: 2px solid grey;
+    padding: 8px;
     border-radius: 5px;
 }
 
 .beer-container .favorite{
     color:rgb(167, 117, 1);
-    border-color: rgb(167, 117, 1);
+    background: white;
+    border: 2px solid rgb(167, 117, 1) ;
 }
 
 /* About us */
