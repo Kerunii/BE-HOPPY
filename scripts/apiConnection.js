@@ -40,6 +40,8 @@ let beerApiRandom = async () => {
         createBeerArticle(beer)
         beerArray.splice(randomNumber, 1)
     }
+
+    update()
     
 }
 
@@ -50,13 +52,16 @@ beerApiRandom()
 //To select a beer as a favorite:
 
 //el problema es que las estrellas de favorito nacen de una función asincrona. 
-let starArray = [...document.querySelectorAll('.fa-star')]
 
-for (i=0; i<starArray.length; i++){
-    starArray[i].addEventListener('click',toggle2);
-    console.log (starArray[i])
+let update = () =>{
+
+    let starArray = [...document.querySelectorAll('.fa-star')]
+
+    for (i=0; i<starArray.length; i++){
+        starArray[i].addEventListener('click',toggle2);
+    }
 }
 
 function toggle2 (event){
-  event.currentTarget.classList.toggle('favorite');
-}
+    event.currentTarget.classList.toggle('favorite');
+  }
