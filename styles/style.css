@@ -47,6 +47,7 @@ nav a:hover{
 
 nav li, nav ul{
     position: relative;
+    z-index: 1;
     bottom: 0.5vh;
     width: auto;
 }
@@ -601,7 +602,7 @@ footer iframe{
     text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
 }
 
-#carousel a{
+#carousel .carousel-caption a{
     font-size: 2vw;
     background-color: black;
     padding: 1vh 10vw;
@@ -611,4 +612,23 @@ footer iframe{
 
 #carousel .d-block{
     filter: opacity(0.9);
+}
+
+#carousel .fa-angle-left::before, #carousel .fa-angle-right::before{
+    font-size: 10vw;
+    text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+} 
+
+.carousel-control-prev, .carousel-control-next{
+    background-color: rgb(255, 226, 160);
+    opacity: 0.9;
+    border: 2px solid black;
+    margin: 2px;
+    height: 50%;
+    width: 10%;
+    top: 30%;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover{
+    opacity:1;
 }
