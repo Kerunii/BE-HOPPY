@@ -291,7 +291,9 @@ footer iframe{
 
 .signup{
     min-height: 100vh;
-    background: url("../img/sign-up-bg.jpg") no-repeat center center;
+    background: url("../img/sign-up-bg2.jpg") no-repeat center center;
+    background-size: cover;
+    filter: brightness(0.8);
     padding: 7vh 0;
 }
 
