@@ -1,14 +1,15 @@
 # BE HOPPY
 
 ## Description
-BE-HOPPY is a responsive web page were you can search info about different beers or even get info about your favorite ones. 
+BE-HOPPY is a static responsive web page were you can find info about your favorite beers or the brewery itself.  
 
 
 ## MVP
--To be a responsive webpage (mobile-first, tablet, laptop)
+- Responsive webpage (mobile-first, tablet, laptop)
 - Display beer info in an ordered way (user-friendly). Info obtained form brewarydb.com
 - To have at least a landing-page, sign-up form, log-in form, a FAQs wildframe and a wildframe were the beer info is displayed (beer cataloge). 
 - Sign up-form and log-in form must have some validation format (i.e. password must be longer than 6 characters).
+- The user data should be storage in local storage
 
 
 ## Backlog
